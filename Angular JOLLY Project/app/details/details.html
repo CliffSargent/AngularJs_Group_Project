@@ -1,0 +1,16 @@
+<section class="logocontainer">
+        <img class="headerlogo" src="/app/assets/images/Logo.png">
+</section>
+<section class="gradient cardCont">
+    <div class="detailsCard animated fadeIn">
+        <img class="details-image" src="{{ $ctrl.info.images[1].url}}">
+        <p class="event-title details-title">{{ $ctrl.info.name }}</p>
+        <p class="event-date">{{ $ctrl.info.dates.start.localDate }}</p>
+        <p class="event-venue">{{ $ctrl.info._embedded.venues[0].name }}</p>
+        <a href="{{ $ctrl.info.url }}">
+            <button class="get-tickets">
+                Get Tickets
+            </button>
+        </a> 
+    </div>
+</section>
